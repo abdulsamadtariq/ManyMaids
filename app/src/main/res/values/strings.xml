@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Many Maids</string>
+    <string name="title_activity_user_home">UserHomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_todo">Todo</string>
+    <string name="title_notifications">Alerts</string>
+    <string name="title_profile">Me</string>
+    <string name="hint_email">Enter your email</string>
+    <string name="hint_password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_to_many_maids">New to Many Maids?</string>
+    <string name="create_an_account">Create an account!</string>
+    <string name="don_t_have_time">Don\'t have time?</string>
+    <string name="go_with_guest_account">Guest account</string>
+    <string name="signUp">Register</string>
+    <string name="login_now">Login Now!</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="volly_error">Request Failed!</string>
+    <string name="json_error">Unable to process your data.</string>
+    <string name="title_activity_admin_home">AdminHomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Logout</string>
+    <string name="title_order">Bookings</string>
+    <string name="user">User</string>
+    <string name="not_internet">Unable to connect to server.  please connect to internet</string>
+    <string name="try_again">try again</string>
+    <string name="per_cleaning">per cleaning</string>
+    <string name="title_activity_user_schedule">UserScheduleActivity</string>
+    <string-array name="country_code">
+        <item>+1</item>
+        <item>+91</item>
+        <item>+92</item>
+    </string-array>
+
+    <string-array name="due_within">
+        <item>Today</item>
+        <item>1 Day</item>
+        <item>2 Days</item>
+        <item>3 Days</item>
+        <item>4 Days</item>
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>All</item>
+    </string-array>
+    <string-array name="booking_filter">
+        <item>None</item>
+        <item>In Progress</item>
+        <item>completed</item>
+        <item>Cancelled By Me</item>
+        <item>Cancelled By Admin</item>
+    </string-array>
+    <string-array name="user_booking_operation">
+        <item>None</item>
+        <item>cancel</item>
+    </string-array>
+    <string-array name="admin_booking_operation">
+        <item>Accept Booking</item>
+        <item>Cancel Booking</item>
+    </string-array>
+
+    <string-array name="group_by">
+        <item>None</item>
+        <item>Area</item>
+        <item>Date</item>
+    </string-array>
+    <string-array name="assign_to">
+        <item>All</item>
+    </string-array>
+
+    <string name="appId" translatable="false">ca-app-pub-4690645660581647~1709915455</string>
+    <string name="bannerId" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="days">Days</string>
+    <string name="indicator">Indicator</string>
+    <string name="defaulta">Default</string>
+    <string name="CleaningPackages">CleaningPackages</string>
+</resources>

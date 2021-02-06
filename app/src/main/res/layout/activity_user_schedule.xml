@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserScheduleActivity">
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/layoutUserHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/svSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/layoutCheckSummary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+
+                <TextView
+                    android:id="@+id/tvCleaningType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Please Select a Cleaning Type" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvCleaningType"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="4"
+                    tools:listitem="@layout/item_single_category" />
+
+                <RelativeLayout
+                    android:id="@+id/layoutInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvCategory">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toStartOf="@+id/tvSelectDate"
+                        android:layout_toLeftOf="@+id/tvSelectDate"
+                        app:srcCompat="@drawable/ic_insert_date_24dp" />
+
+                    <TextView
+                        android:id="@+id/tvSelectDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:text="Select The Date and Time To start"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <devs.mulham.horizontalcalendar.HorizontalCalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layoutInfo"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorPrimary"
+                    app:textColorSelected="#FFFF" />
+
+                <TextView
+                    android:id="@+id/tvSelectedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/calendarView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp"
+                    tools:text="Thursday 23,april,2020" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSelectedDate"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_single_time" />
+
+                <TextView
+                    android:id="@+id/tvMaidArriveTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvTime"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    tools:text="Your maid will arrive between \n \t\t\t 9:00am and 10:00 am " />
+
+
+                <View
+                    android:id="@+id/linebreak"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/tvMaidArriveTime"
+                    android:background="@drawable/line" />
+
+                <TextView
+                    android:id="@+id/tvK"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/linebreak"
+                    android:layout_margin="4dp"
+                    android:text="Please Select an address for which you want to hire"
+                    android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvK"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="20"
+                    tools:listitem="@layout/item_single_address" />
+
+                <TextView
+                    android:id="@+id/tvInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rvAddress"
+                    android:text="You have not saved any address!please add one"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivAddAddress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/tvInfo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_round_add_btn" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ivAddAddress"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="How often?" />
+
+                    <RadioGroup
+                        android:id="@+id/rbHowOften"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/rbOneTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="One Time" />
+
+
+                        <RadioButton
+                            android:id="@+id/rbTwoTimesAWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2x per week" />
+
+                        <LinearLayout
+                            android:id="@+id/layout2xPerWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/chkMonday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Monday"
+                                    android:textSize="12sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chkTue"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Tuesday"
+                                    android:textSize="12sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chkWed"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="wednesday"
+                                    android:textSize="12sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chkThu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Thursday"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <CheckBox
+                                    android:id="@+id/chkFri"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Friday"
+                                    android:textSize="12sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chkSat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Saturday"
+                                    android:textSize="12sp" />
+
+                                <CheckBox
+                                    android:id="@+id/chkSunday"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="Sunday"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RadioButton
+                            android:id="@+id/rbEveryWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Every week" />
+
+                        <RadioButton
+                            android:id="@+id/rbEveryOtherWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Every other week" />
+
+                        <RadioButton
+                            android:id="@+id/rbEveryFourWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Every Four weeks (i.e One month)" />
+
+                        <RadioButton
+                            android:id="@+id/rbOneYear"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="One year" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:text="Save 10% on year subscription" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:text="Cancel anytime"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:text="we just ask 24 hours notice"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <include layout="@layout/layout_guest" />
+
+        <RelativeLayout
+            android:id="@+id/layoutCheckSummary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSummary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@color/red"
+                android:drawableTop="@drawable/ic_arrow_drop_up_black_24dp"
+                android:padding="8dp"
+                android:text="Check Summary"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/layout_no_internet" />
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "34788016652",
+    "firebase_url": "https://manymaids-9c60a.firebaseio.com",
+    "project_id": "manymaids-9c60a",
+    "storage_bucket": "manymaids-9c60a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34788016652:android:6c1ead0fd7a3e066066429",
+        "android_client_info": {
+          "package_name": "com.manymaidsinprovo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34788016652-jrlvbp7hjbqmm51h5fd3k1nfva2fb8v7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manymaidsinprovo",
+            "certificate_hash": "4cf804f12a3365d9bd04f45c1391e24911b63b7f"
+          }
+        },
+        {
+          "client_id": "34788016652-5k9l0eh441avg7143dtt5n6fnoks2q7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9e9q211_-cwDDYinOpbeO8F0Y7UqcYNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34788016652-5k9l0eh441avg7143dtt5n6fnoks2q7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

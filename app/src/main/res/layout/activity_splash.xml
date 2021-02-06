@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activities.SplashActivity"
+    android:background="@color/colorPrimary"
+    >
+
+    <ImageView
+        android:id="@+id/ivSplash"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/cleaning_long"
+        android:layout_weight="2"
+        />
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fff_tusj"
+        android:text="Many Maids"
+        android:textSize="38sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+
+</LinearLayout>

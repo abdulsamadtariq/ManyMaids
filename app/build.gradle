@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.1"
+    defaultConfig {
+        applicationId "com.manymaidsinprovo"
+        minSdkVersion 16
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+         multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'com.google.firebase:firebase-database:16.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'com.karumi:dexter:5.0.0'
+    api 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
+
+    //horizontal calderView
+    implementation 'devs.mulham.horizontalcalendar:horizontalcalendar:1.3.4'
+    implementation 'com.mikepenz:actionitembadge:4.0.0'
+    implementation 'com.mikepenz:iconics-core:4.0.2@rar'
+
+/*
+    implementation('com.github.chtgupta:FadeInTextView-Android:2.1.0') {
+        exclude module: 'app'
+    }
+*/
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //   implementation 'com.github.volobot-admin:String-Picker-Android:v1.3' //requires min. 19 sdk
+
+    implementation 'com.github.mohammadatif:Animatoo:master'
+
+    implementation "com.daimajia.swipelayout:library:1.2.0@aar"
+
+    implementation 'com.github.lecho:hellocharts-android:v1.5.8'
+    implementation 'com.github.iwgang:countdownview:2.1.6'
+
+
+//    implementation 'com.codemybrainsout.onboarding:onboarder:1.0.4'
+
+    implementation 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+//ads
+    implementation 'com.google.android.gms:play-services-ads:19.1.0'
+/*    // ViewModel // LiveData
+    def lifecycle_version = "2.2.0"
+    def room_version = "2.2.5"
+
+
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"*/
+}

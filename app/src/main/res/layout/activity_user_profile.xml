@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.UserProfileActivity">
+
+    <ScrollView
+        android:id="@+id/slv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layoutMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="#414141">
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    tools:text="abc@email.com" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civProfile"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_above="@id/btnUpload"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="2dp"
+                    android:src="@drawable/ic_profile_gray" />
+
+                <ImageButton
+                    android:id="@+id/ibChangeProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/civProfile"
+                    android:layout_alignEnd="@+id/civProfile"
+                    android:layout_alignRight="@+id/civProfile"
+                    android:layout_marginTop="-4dp"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginRight="-4dp"
+                    android:background="@drawable/yellow_circular"
+                    android:padding="4dp"
+                    app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+                <TextView
+                    android:id="@+id/btnUpload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bg_button"
+                    android:padding="8dp"
+                    android:text="Upload"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="2dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_input_field">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/titFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="First Name" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_input_field">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/titLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Last Name" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wallet Amount"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:id="@+id/tvWalletAmount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="$200"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"/>
+                        <TextView
+                            android:id="@+id/tvRechargeWallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recharge"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:textColor="@color/colorAreaGreen"
+                            android:textSize="16sp"
+                            android:background="@drawable/bg_time"
+                            android:gravity="center_horizontal"
+                            android:padding="3dp"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnUpadteName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/bg_time"
+                        android:gravity="center"
+                        android:paddingStart="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingEnd="4dp"
+                        android:paddingRight="4dp"
+                        android:text="Update Name"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorAreaGreen" />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="your saved addresses"
+                        android:textSize="15sp"
+                        android:textStyle="italic" />
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="20"
+                        tools:listitem="@layout/item_single_address" />
+
+                    <TextView
+                        android:id="@+id/tvInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You have not saved any address!please add one"
+                        android:textColor="@color/red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivAddAddress"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_round_add_btn" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/bg_button"
+                android:text="Logout"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include layout="@layout/layout_guest" />
+
+</RelativeLayout>

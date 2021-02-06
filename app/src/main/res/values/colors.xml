@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#240070</color>
+    <color name="colorPrimaryDark">#240070</color>
+    <color name="colorAccent">#D16415</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFC107</color>
+    <color name="LightYellow">#FFEB3B</color>
+    <color name="darkYellow">#D5FF9800</color>
+    <color name="Black">#000000</color>
+    <color name="grey">#3F3E3E</color>
+    <color name="red">#C90D0D</color>
+    <color name="green">#98EC9B</color>
+    <color name="green1">#0B8011</color>
+    <color name="colorDivider">#E6E6E6</color>
+    <color name="colorBottomBarBackground">#FFFFFF</color>
+    <color name="colorItemDefaultBackground">#FFFFFF</color>
+    <color name="colorItemDefaultTint">#000000</color>
+    <color name="colorItem1Background">#F7D7EF</color>
+    <color name="colorItem2Background">#C2D0F8</color>
+    <color name="colorItem3Background">#CFEBEF</color>
+    <color name="decent">#8B56E7B0</color>
+
+    <!--new colors -->
+
+
+    <color name="abc_input_method_navigation_guard"
+        tools:override="true">@android:color/black</color>
+    <color name="abc_search_url_text_normal" tools:override="true">#ff7fa87f</color>
+    <color name="abc_search_url_text_pressed" tools:override="true">@android:color/black</color>
+    <color name="abc_search_url_text_selected" tools:override="true">@android:color/black</color>
+    <color name="accent_material_dark" tools:override="true">@color/material_deep_teal_200</color>
+    <color name="accent_material_light" tools:override="true">@color/material_deep_teal_500</color>
+    <color name="background_floating_material_dark" tools:override="true">@color/material_grey_800</color>
+    <color name="background_floating_material_light" tools:override="true">@android:color/white</color>
+    <color name="background_material_dark" tools:override="true">@color/material_grey_850</color>
+    <color name="background_material_light" tools:override="true">@color/material_grey_50</color>
+    <color name="bright_foreground_disabled_material_dark" tools:override="true">#80ffffff</color>
+    <color name="bright_foreground_disabled_material_light" tools:override="true">#80000000</color>
+    <color name="bright_foreground_inverse_material_dark" tools:override="true">@color/bright_foreground_material_light</color>
+    <color name="bright_foreground_inverse_material_light" tools:override="true">@color/bright_foreground_material_dark</color>
+    <color name="bright_foreground_material_dark" tools:override="true">@android:color/white</color>
+    <color name="bright_foreground_material_light" tools:override="true">@android:color/black</color>
+    <color name="browser_actions_bg_grey">#fff5f5f5</color>
+    <color name="browser_actions_divider_color">#1e000000</color>
+    <color name="browser_actions_text_color">#de000000</color>
+    <color name="browser_actions_title_color">#ff646464</color>
+    <color name="button_material_dark" tools:override="true">#ff5a595b</color>
+    <color name="button_material_light" tools:override="true">#ffd6d7d7</color>
+    <color name="cardview_dark_background" tools:override="true">#ff424242</color>
+    <color name="cardview_light_background" tools:override="true">#ffffffff</color>
+    <color name="cardview_shadow_end_color" tools:override="true">#03000000</color>
+    <color name="cardview_shadow_start_color" tools:override="true">#37000000</color>
+    <color name="colorArchiveOne">#ff193319</color>
+    <color name="colorArchiveTwo">#ff334633</color>
+    <color name="colorAreaBeige">#ff858369</color>
+    <color name="colorAreaBeigeLighter">#ffa08764</color>
+    <color name="colorAreaBeigeLighterTrans">#b3a08764</color>
+    <color name="colorAreaBeigeTrans">#b3858369</color>
+    <color name="colorAreaBeigeTransVery">#26858369</color>
+    <color name="colorAreaBlack">#ff181914</color>
+    <color name="colorAreaBlackLighter">#ff181914</color>
+    <color name="colorAreaBlackLighterTrans">#b3181914</color>
+    <color name="colorAreaBlackTrans">#b3181914</color>
+    <color name="colorAreaBlackTransVery">#26181914</color>
+    <color name="colorAreaBrown">#ff4e3e34</color>
+    <color name="colorAreaBrownLighter">#ff8d6e63</color>
+    <color name="colorAreaBrownLighterTrans">#b38d6e63</color>
+    <color name="colorAreaBrownTrans">#b34e3e34</color>
+    <color name="colorAreaBrownTransVery">#264e3e34</color>
+    <color name="colorAreaDarkBlue">#ff0a6496</color>
+    <color name="colorAreaDarkBlueLighter">#ff0a6496</color>
+    <color name="colorAreaDarkBlueLighterTrans">#b30a6496</color>
+    <color name="colorAreaDarkBlueTrans">#b30a6496</color>
+    <color name="colorAreaDarkBlueTransVery">#260a6496</color>
+    <color name="colorAreaDeepPurple">#ff6c3483</color>
+    <color name="colorAreaDeepPurpleLighter">#ff673ab7</color>
+    <color name="colorAreaDeepPurpleLighterTrans">#b3673ab7</color>
+    <color name="colorAreaDeepPurpleTrans">#b36c3483</color>
+    <color name="colorAreaDeepPurpleTransVery">#266c3483</color>
+    <color name="colorAreaEmpty">#ffffffff</color>
+    <color name="colorAreaEmptyTrans">#b3ffffff</color>
+    <color name="colorAreaEmptyTransVery">#26ffffff</color>
+    <color name="colorAreaFreshBlue">#ff009ce6</color>
+    <color name="colorAreaFreshBlueLighter">#ff009ce6</color>
+    <color name="colorAreaFreshBlueLighterTrans">#b3009ce6</color>
+    <color name="colorAreaFreshBlueTrans">#b3009ce6</color>
+    <color name="colorAreaFreshBlueTransVery">#26009ce6</color>
+    <color name="colorAreaGray">#ff646464</color>
+    <color name="colorAreaGrayLighter">#ff646464</color>
+    <color name="colorAreaGrayLighterTrans">#b3646464</color>
+    <color name="colorAreaGrayTrans">#b3646464</color>
+    <color name="colorAreaGrayTransVery">#26646464</color>
+    <color name="colorAreaGreen">#ff0a9764</color>
+    <color name="colorAreaGreenLighter">#ff4caf50</color>
+    <color name="colorAreaGreenLighterTrans">#b34caf50</color>
+    <color name="colorAreaGreenTrans">#b30a9764</color>
+    <color name="colorAreaGreenTransVery">#260a9764</color>
+    <color name="colorAreaIndigo">#ff6e5464</color>
+    <color name="colorAreaIndigoLighter">#ff6e5464</color>
+    <color name="colorAreaIndigoLighterTrans">#b36e5464</color>
+    <color name="colorAreaIndigoTrans">#b36e5464</color>
+    <color name="colorAreaIndigoTransVery">#266e5464</color>
+    <color name="colorAreaLightBrown">#ffc4a465</color>
+    <color name="colorAreaLightBrownLighter">#ffc4a465</color>
+    <color name="colorAreaLightBrownLighterTrans">#b3c4a465</color>
+    <color name="colorAreaLightBrownTrans">#b3c4a465</color>
+    <color name="colorAreaLightBrownTransVery">#26c4a465</color>
+    <color name="colorAreaLightGray">#ff7b7d7d</color>
+    <color name="colorAreaLightGrayLighter">#ff7b7d7d</color>
+    <color name="colorAreaLightGrayLighterTrans">#b37b7d7d</color>
+    <color name="colorAreaLightGrayTrans">#b37b7d7d</color>
+    <color name="colorAreaLightGrayTransVery">#267b7d7d</color>
+    <color name="colorAreaLime">#ff6e7b46</color>
+    <color name="colorAreaLimeLighter">#ff9e9d24</color>
+    <color name="colorAreaLimeLighterTrans">#b39e9d24</color>
+    <color name="colorAreaLimeTrans">#b36e7b46</color>
+    <color name="colorAreaLimeTransVery">#266e7b46</color>
+    <color name="colorAreaOrange">#ffef6c00</color>
+    <color name="colorAreaOrangeLighter">#fff57c00</color>
+    <color name="colorAreaOrangeLighterTrans">#b3f57c00</color>
+    <color name="colorAreaOrangeTrans">#b3ef6c00</color>
+    <color name="colorAreaOrangeTransVery">#26ef6c00</color>
+    <color name="colorAreaPurple">#ff941552</color>
+    <color name="colorAreaPurpleLighter">#ffd81b60</color>
+    <color name="colorAreaPurpleLighterTrans">#b3d81b60</color>
+    <color name="colorAreaPurpleTrans">#b3941552</color>
+    <color name="colorAreaPurpleTransVery">#26941552</color>
+    <color name="colorAreaRed">#ffc0300a</color>
+    <color name="colorAreaRedLighter">#ffd22f2f</color>
+    <color name="colorAreaRedLighterTrans">#b3d22f2f</color>
+    <color name="colorAreaRedTrans">#b3c0300a</color>
+    <color name="colorAreaRedTransVery">#26c0300a</color>
+    <color name="colorAreaTeal">#ff00796b</color>
+    <color name="colorAreaTealLighter">#ff26a69a</color>
+    <color name="colorAreaTealLighterTrans">#b326a69a</color>
+    <color name="colorAreaTealTrans">#b300796b</color>
+    <color name="colorAreaTealTransVery">#2600796b</color>
+    <color name="colorAreaTurquis">#ff1aa6ad</color>
+    <color name="colorAreaTurquisLighter">#ff00acc1</color>
+    <color name="colorAreaTurquisLighterTrans">#b300acc1</color>
+    <color name="colorAreaTurquisTrans">#b31aa6ad</color>
+    <color name="colorAreaTurquisTransVery">#261aa6ad</color>
+    <color name="colorBackgroundBlack">#ff000000</color>
+    <color name="colorInactiveBlur">#4df8f8f8</color>
+    <color name="colorPrimaryBlueTheme">#ff4780ce</color>
+    <color name="colorPrimaryGrayTheme">#ff828282</color>
+    <color name="colorPrimaryPinkTheme">#ffff738c</color>
+    <color name="colorPrimaryVariantBlueTheme">#ff6491d1</color>
+    <color name="colorPrimaryVariantGrayTheme">#ff9e9e9e</color>
+    <color name="colorPrimaryVariantPinkTheme">#ffff667f</color>
+    <color name="colorSecondaryBlueTheme">#ff424242</color>
+    <color name="colorSecondaryGrayTheme">#ff50aa50</color>
+    <color name="colorSecondaryPinkTheme">#ff6a1b9a</color>
+    <color name="colorSecondaryVariantBlueTheme">#ff505050</color>
+    <color name="colorSecondaryVariantGrayTheme">#ff64c864</color>
+    <color name="colorSecondaryVariantPinkTheme">#ff8e24aa</color>
+    <color name="colorSignalBlueTheme">#fffa8228</color>
+    <color name="colorSignalGrayTheme">#ff64c864</color>
+    <color name="colorSignalPinkTheme">#ff1565c0</color>
+    <color name="design_bottom_navigation_shadow_color" tools:override="true">#14000000</color>
+    <color name="design_default_color_primary" tools:override="true">#ff3f51b5</color>
+    <color name="design_default_color_primary_dark">#ff303f9f</color>
+    <color name="design_fab_shadow_end_color">@android:color/transparent</color>
+    <color name="design_fab_shadow_mid_color">#14000000</color>
+    <color name="design_fab_shadow_start_color">#44000000</color>
+    <color name="design_fab_stroke_end_inner_color">#0a000000</color>
+    <color name="design_fab_stroke_end_outer_color">#0f000000</color>
+    <color name="design_fab_stroke_top_inner_color">#1affffff</color>
+    <color name="design_fab_stroke_top_outer_color">#2effffff</color>
+    <color name="design_snackbar_background_color">#ff323232</color>
+    <color name="dim_foreground_disabled_material_dark">#80bebebe</color>
+    <color name="dim_foreground_disabled_material_light">#80323232</color>
+    <color name="dim_foreground_material_dark">#ffbebebe</color>
+    <color name="dim_foreground_material_light">#ff323232</color>
+    <color name="error_color_material_dark">#ffff7043</color>
+    <color name="error_color_material_light">#ffff5722</color>
+    <color name="foreground_material_dark">@android:color/white</color>
+    <color name="foreground_material_light">@android:color/black</color>
+    <color name="generalWhite">#fff4f4f4</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="highlighted_text_material_light">#66009688</color>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="material_blue_grey_950">#ff21272b</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff009688</color>
+    <color name="material_grey_100">#fff5f5f5</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
+    <color name="material_grey_50">#fffafafa</color>
+    <color name="material_grey_600">#ff757575</color>
+    <color name="material_grey_800">#ff424242</color>
+    <color name="material_grey_850">#ff303030</color>
+    <color name="material_grey_900">#ff212121</color>
+    <color name="mtrl_btn_bg_color_disabled">#1f000000</color>
+    <color name="mtrl_btn_text_color_disabled">#61000000</color>
+    <color name="mtrl_btn_transparent_bg_color">#00ffffff</color>
+    <color name="mtrl_scrim_color">#52000000</color>
+    <color name="mtrl_textinput_default_box_stroke_color">#6b000000</color>
+    <color name="mtrl_textinput_disabled_color">#1f000000</color>
+    <color name="mtrl_textinput_filled_box_default_background_color">#0a000000</color>
+    <color name="mtrl_textinput_hovered_box_stroke_color">#de000000</color>
+    <color name="notification_action_color_filter">@color/secondary_text_default_material_light</color>
+    <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="notification_material_background_media_default_color">#ff424242</color>
+    <color name="preference_fallback_accent_color">#ff008577</color>
+    <color name="primary_dark_material_dark">@android:color/black</color>
+    <color name="primary_dark_material_light">@color/material_grey_600</color>
+    <color name="primary_material_dark">@color/material_grey_900</color>
+    <color name="primary_material_light">@color/material_grey_100</color>
+    <color name="primary_text_default_material_dark">#ffffffff</color>
+    <color name="primary_text_default_material_light">#de000000</color>
+    <color name="primary_text_disabled_material_dark">#4dffffff</color>
+    <color name="primary_text_disabled_material_light">#39000000</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+    <color name="secondary_text_default_material_dark">#b3ffffff</color>
+    <color name="secondary_text_default_material_light">#8a000000</color>
+    <color name="secondary_text_disabled_material_dark">#36ffffff</color>
+    <color name="secondary_text_disabled_material_light">#24000000</color>
+    <color name="settingsBackground">#fff6f7f9</color>
+    <color name="settingsBackgroundBackUp">#ffe6e6e6</color>
+    <color name="swipeButtonGreen">#ff40d534</color>
+    <color name="swipeButtonOrange">#fffc6a08</color>
+    <color name="swipeButtonRed">#fffb2126</color>
+    <color name="switch_thumb_disabled_material_dark">#ff616161</color>
+    <color name="switch_thumb_disabled_material_light">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_dark">#ffbdbdbd</color>
+    <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+    <color name="transparent">#00ffffff</color>
+</resources>

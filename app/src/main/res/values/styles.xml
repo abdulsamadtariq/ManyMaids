@@ -1,0 +1,327 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.NoToolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- new Area styles-->
+
+    <style name="AreaTypeBeige">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaBeige</item>
+        <item name="colorPrimaryDark">@color/colorAreaBeige</item>
+        <item name="colorPrimaryVariant">@color/colorAreaBeigeTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeBeigeLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaBeigeLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaBeigeLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaBeigeLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeBlack">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaBlack</item>
+        <item name="colorPrimaryDark">@color/colorAreaBlack</item>
+        <item name="colorPrimaryVariant">@color/colorAreaBlackTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeBlackLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaBlackLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaBlackLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaBlackLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeBrown">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaBrown</item>
+        <item name="colorPrimaryDark">@color/colorAreaBrown</item>
+        <item name="colorPrimaryVariant">@color/colorAreaBrownTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeBrownLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaBrownLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaBrownLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaBrownLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeDarkBlue">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaDarkBlue</item>
+        <item name="colorPrimaryDark">@color/colorAreaDarkBlue</item>
+        <item name="colorPrimaryVariant">@color/colorAreaDarkBlueTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeDarkBlueLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaDarkBlueLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaDarkBlueLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaDarkBlueLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeDeepPurple">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaDeepPurple</item>
+        <item name="colorPrimaryDark">@color/colorAreaDeepPurple</item>
+        <item name="colorPrimaryVariant">@color/colorAreaDeepPurpleTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeDeepPurpleLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaDeepPurpleLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaDeepPurpleLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaDeepPurpleLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeEmpty">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaEmpty</item>
+        <item name="colorPrimaryDark">@color/colorSecondaryBlueTheme</item>
+        <item name="colorPrimaryVariant">@color/colorAreaEmptyTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeEmptyLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaEmpty</item>
+        <item name="colorPrimaryVariant">@color/colorAreaEmptyTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeFreshBlue">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaFreshBlue</item>
+        <item name="colorPrimaryDark">@color/colorAreaFreshBlue</item>
+        <item name="colorPrimaryVariant">@color/colorAreaFreshBlueTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeFreshBlueLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaFreshBlueLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaFreshBlueLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaFreshBlueLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeGray">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaGray</item>
+        <item name="colorPrimaryDark">@color/colorAreaGray</item>
+        <item name="colorPrimaryVariant">@color/colorAreaGrayTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeGrayLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaGrayLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaGrayLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaGrayLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeGreen">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaGreen</item>
+        <item name="colorPrimaryDark">@color/colorAreaGreen</item>
+        <item name="colorPrimaryVariant">@color/colorAreaGreenTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeGreenLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaGreenLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaGreenLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaGreenLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeIndigo">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaIndigo</item>
+        <item name="colorPrimaryDark">@color/colorAreaIndigo</item>
+        <item name="colorPrimaryVariant">@color/colorAreaIndigoTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeIndigoLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaIndigoLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaIndigoLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaIndigoLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeLightBrown">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaLightBrown</item>
+        <item name="colorPrimaryDark">@color/colorAreaLightBrown</item>
+        <item name="colorPrimaryVariant">@color/colorAreaLightBrownTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeLightBrownLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaLightBrownLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaLightBrownLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaLightBrownLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeLightGray">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaLightGray</item>
+        <item name="colorPrimaryDark">@color/colorAreaLightGray</item>
+        <item name="colorPrimaryVariant">@color/colorAreaLightGrayTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeLightGrayLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaLightGrayLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaLightGrayLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaLightGrayLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryPinkTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantPinkTheme</item>
+    </style>
+    <style name="AreaTypeLime">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaLime</item>
+        <item name="colorPrimaryDark">@color/colorAreaLime</item>
+        <item name="colorPrimaryVariant">@color/colorAreaLimeTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeLimeLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaLimeLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaLimeLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaLimeLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeOrange">
+        <item name="colorAccent">@color/colorSignalPinkTheme</item>
+        <item name="colorPrimary">@color/colorAreaOrange</item>
+        <item name="colorPrimaryDark">@color/colorAreaOrange</item>
+        <item name="colorPrimaryVariant">@color/colorAreaOrangeTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeOrangeLighter">
+        <item name="colorAccent">@color/colorSignalPinkTheme</item>
+        <item name="colorPrimary">@color/colorAreaOrangeLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaOrangeLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaOrangeLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypePurple">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaPurple</item>
+        <item name="colorPrimaryDark">@color/colorAreaPurple</item>
+        <item name="colorPrimaryVariant">@color/colorAreaPurpleTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypePurpleLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaPurpleLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaPurpleLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaPurpleLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeRed">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaRed</item>
+        <item name="colorPrimaryDark">@color/colorAreaRed</item>
+        <item name="colorPrimaryVariant">@color/colorAreaRedTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeRedLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaRedLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaRedLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaRedLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeTeal">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaTeal</item>
+        <item name="colorPrimaryDark">@color/colorAreaTeal</item>
+        <item name="colorPrimaryVariant">@color/colorAreaTealTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeTealLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaTealLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaTealLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaTealLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeTurquis">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaTurquis</item>
+        <item name="colorPrimaryDark">@color/colorAreaTurquis</item>
+        <item name="colorPrimaryVariant">@color/colorAreaTurquisTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+    <style name="AreaTypeTurquisLighter">
+        <item name="colorAccent">@color/colorSignalBlueTheme</item>
+        <item name="colorPrimary">@color/colorAreaTurquisLighter</item>
+        <item name="colorPrimaryDark">@color/colorAreaTurquisLighter</item>
+        <item name="colorPrimaryVariant">@color/colorAreaTurquisLighterTrans</item>
+        <item name="colorSecondary">@color/colorSecondaryBlueTheme</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariantBlueTheme</item>
+    </style>
+
+</resources>

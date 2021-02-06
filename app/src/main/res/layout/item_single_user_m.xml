@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/colorPrimaryBlueTheme"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="6dp">
+
+    <com.daimajia.swipe.SwipeLayout
+        android:id="@+id/slUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:clickToClose="true">
+
+        <LinearLayout
+            android:id="@+id/bottomWraper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Delete"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="AST"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+</androidx.cardview.widget.CardView>
